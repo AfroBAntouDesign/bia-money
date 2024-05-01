@@ -1,0 +1,132 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+
+
+    
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+    
+}
+:root{
+    
+    --color-primary:#dbdbdb;
+    --color-secondary:#08529d;
+    --color-success-s :#620de1;
+    --color-success :#048d0b;
+    --color-white:#fff;
+    --color-lght:#bf0f35;
+    --color-black:#000;
+    --color-bg:#15202b;
+    --color-shadow:#4e4d4d33;
+    --color-bg2:#0a131c;
+    --footer-bg:#0b140c;
+
+
+   
+
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+body{
+    padding: 5em;
+}
+.longin-page{
+    padding: 5em;
+    background: var(--color-bg);
+    border-radius: 1em;
+    
+}
+.wellcom-msg{
+    padding: 1em;
+    color: var(--color-white);
+}
+.wellcom-msg p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.entrepreneur-msg{
+    background: var(--color-success-s);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.marcher-msg{
+    background: var(--color-lght);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.totin-msg{
+    background: var(--color-success);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.directory-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em;
+    gap: 2em;
+}
+.directory-box h2{
+    color: var(--color-white);
+    background: var(--color-bg2);
+    padding: 5em;
+    text-align: center;
+    border-radius: 0.5em;
+    border: 1px solid var(--color-secondary);
+    cursor: pointer;
+    font-size: 1.5em;
+    height: 5em;
+
+}
+.directory-box h2:hover{
+    background: var(--color-white);
+    color: var(--color-secondary);
+    transition: var(--transition);
+}
+.btn-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    gap: 5em;
+   
+}
+button{
+    font-size: 1.1em;
+    padding: 1em;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 0.5em;
+    width: 100%;
+    height: 100%;
+}
+
+button:active{
+    transform: translateY(2px);
+    background: var(--color-white);
+    color: var(--color-secondary);
+}
+
+
+@media screen and (max-width: 868px){
+    .directory-box{
+        flex-direction: column;
+    }
+    
+}

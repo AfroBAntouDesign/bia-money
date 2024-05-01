@@ -1,0 +1,922 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+
+
+    
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+    
+}
+:root{
+    
+    --color-primary:#dbdbdb;
+    --color-secondary:#024eff;
+    --color-success-s :#89eff7;
+    --color-success :#0a350c;
+    --color-white:#fff;
+    --color-lght:#ffafc0;
+    --color-black:#000;
+    --color-bg:#15202b;
+    --color-shadow:#4e4d4d33;
+    --color-bg2:#0a131c;
+    --footer-bg:#0b140c;
+
+
+   
+
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+/**================header design====================*/
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    padding: 1.5rem;
+    
+    border: 1px solid var(--color-primary);
+}
+.header a{
+    color: var(--color-white);
+    background: var(--color-bg);
+   
+    padding: 1rem;
+    border-radius: 0.625em;
+    font-size: 1.1rem;
+}
+.header a:hover{
+    background: var(--color-secondary);
+   
+    border: none;
+    transition: var(--transition);
+}
+
+/*=========================group cathegorie styling===========*/
+#home{
+    margin-top:13rem;
+}
+
+.groupCathegorie{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+   
+
+}
+.groupCathegorie div{
+    
+    padding: 0.8rem;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-bg);
+    border-radius: 20%;
+    margin-left: .8rem;
+    color:var(--color-primary);
+    cursor: pointer;
+
+}
+
+.groupCathegorie div:hover{
+    
+    
+    background-color: var(--color-bg);
+    border: 1px solid #ffaa00;
+    color: #f0f0f7;
+    transform: scale(1.09);
+
+}
+
+
+/*=========================group cathegorie styling===========*/
+#home{
+    margin-top:3em;
+}
+
+.groupCathegorie{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+   
+
+}
+.groupCathegorie div{
+    
+    padding: 0.8rem;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-bg2);
+    border-radius: 20%;
+    margin-left: .8rem;
+    color: var(--color-primary);
+    cursor: pointer;
+
+}
+
+.groupCathegorie div:hover{
+    
+    
+    background-color: var(--color-secondary);
+    border: 1px solid #ffaa00;
+    color: #f0f0f7;
+    transform: scale(1.09);
+
+}
+/*===============group list styling===================*/
+#group-list{
+    padding: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*
+.groupList .groupBox{
+    border: 1px solid #3873f9;
+    width: 15%;
+    height: 15rem;
+    border-radius: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(56,155,249),rgba(144, 193, 254, 0.426)) ;
+  
+   
+}
+*/
+.groupList{
+    text-align: center;
+    width: 10rem;
+    color: #ffaa00 ;
+    background: var(--color-bg);
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    
+    border-bottom-left-radius: 1.6rem;
+    transform: var(--transition);
+
+}
+.groupList:hover{
+   
+    color: var(--color-primary) ;
+    background: var(--color-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+   
+
+}
+.groupList .groupBox .figure{
+    background:var(--color-bg);
+    width: 100%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1.6rem;
+  
+
+}
+
+.groupList .groupBox .figure img{
+    border: 1px solid var(--color-bg);
+   border-radius: 50%;
+   width: 98%;
+  padding: .2rem;
+ 
+}
+.groupList .groupBox:hover .figure img{
+    border: 1px solid #f73939;
+    cursor: pointer;
+ 
+}
+.groupList .groupBox .GroupDescription{
+    background:var(--color-bg) ;
+    color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 1.6rem;
+    border-top-right-radius: 1.2rem;
+   
+}
+.groupList .groupBox .GroupDescription button{
+  
+    border-radius: .6rem;
+    padding: 0.5em;
+    margin: .6rem;
+    cursor: pointer;
+    background: var(--bg-color);
+    color: var(--color-white);
+    font-size: medium;
+    font-weight: lighter;
+    transition: var(--transition);
+   
+}
+.groupList .groupBox .GroupDescription button:hover{
+    border: 1px solid var(--color-secondary);
+    
+    background: var(--color-secondary);
+    
+    color: var(--color-white);
+    
+   
+}
+.groupList .GroupDescription p{
+    color: var(--color-white);
+   margin: .6rem;
+   
+}
+.groupList .groupBox:hover .GroupDescription p{
+    color: var(--color-white);
+   margin: .6rem;
+   
+}
+
+
+/*======================interpse styling==============================*/
+#interpreise{
+    align-items: center;
+}
+.interprise-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  
+    margin: 3rem;
+    margin-top: 1rem;
+    padding: 3rem;
+   
+}
+
+.products-liste div{
+    border: 1px solid var(--color-secondary);
+    border-radius: 1.5rem;
+    width: 300px;
+    padding: .4rem;
+    margin-top: .4rem;
+    color: var(--color-white);
+    background: var(--color-bg);
+    cursor: pointer;
+    text-align: center;
+}
+
+.products-liste .heading h2{
+    
+  
+    text-align: center;
+}
+.products-liste .heading{
+    
+    
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+    background: var(--color-bg);
+    cursor: pointer;
+    text-align: center;
+}
+.products-liste{
+    padding: 2rem;
+    background: var(--color-bg);
+    border-radius: 1em;
+    align-items: center;
+}
+.product-image{
+    align-items: center;
+}
+.product-details figure{
+    width: 200px;
+    height: 150px;
+  
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-details figure img{
+   text-align: center;
+   border-radius: 1em;
+}
+.product-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg);
+    border-radius: 1em;
+
+}
+.product-info{
+    padding: 2rem;
+
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.product-info .info ul{
+   font-size: smaller;
+   width: 500px;
+  
+}
+.product-info .info ul li{
+    border: 1px solid var(--color-white);
+    color: var(--color-white) ;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    font-size: smaller;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-info h2{
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+
+}
+.product-info .info ul li h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-primary);
+    
+}
+.product-info .info ul li h3 span{
+   
+    color: var(--color-secondary);
+    
+}
+.product-counts{
+    padding: 2rem;
+    border: 1px solid var(--color-bg2);
+
+}
+.product-counts ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.general-info{
+    padding: 2rem;
+    border-radius: 1em;
+    border: 1px solid var(--color-secondary);
+}
+
+
+
+/*==========interprise accounts info============*/
+#interprise-acount .intp-accounts-title{
+    text-align: center;
+    border: 1px solid var(--bg-color);
+    color: var(--color-white);
+    padding: .5rem;
+    font-size: 1.6rem;
+}
+.int-account-wrapper{
+    padding: 3rem;
+    color: #ffaa00;
+    text-align: center;
+    font-size: medium;
+    
+
+}
+.int-account-wrapper h1{
+    color: var(--color-bg);
+    font-size: large;
+ 
+ }
+.int-account-wrapper h3{
+   color: #f73939;
+   font-size: smaller;
+
+}
+.int-account-wrapper h2{
+    color: var(--color-bg);
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: .6rem;
+ 
+ }
+.int-account-wrapper .product-stock-info{
+    display: grid;
+    grid-template-columns: repeat(6,0.2fr);
+    border: 1px solid #ffaa00;
+    background:var(--color-bg) ;
+    padding: .6rem;
+    border-radius: .6rem;
+    margin-bottom: .6rem;
+
+}
+.int-account-wrapper .product-stock{
+    display: grid;
+    grid-template-columns: repeat(6,0.2fr);
+
+}
+.intp-stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.intp-stat div{
+    border: 1px solid var(--color-bg2);
+    padding: .6rem;
+    border-radius: .6rem;
+    color: var(--color-secondary);
+    font-weight: smaller;
+    width: 200px;
+}
+.intp-stat div h2{
+    font-size: 1.6rem;
+    color: var(--color-bg);
+}
+
+/*===============artcle list styling===================*/
+#Group-articles h2{
+    border: 1px solid var(--color-bg2);
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    padding: 1rem;
+    color: var(--color-bg2);
+}
+.article-box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--color-bg2);
+    border-radius: 5%;
+    transition: var(--transition);
+
+}
+.article-box:hover{
+    transform: scale(1.02);
+    border: 2px solid var(--color-bg2);
+    background:  var(--color-bg);
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+}
+figure {
+    height:180px;
+    border-radius: .6rem;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+figure ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding:5px ;
+    text-align: center;
+    
+}
+figure ul li{
+
+        border: 1px solid #ffaa00;
+        border-radius: .4rem;
+        color: #f73939;
+        font-size: .6rem;
+        margin: 0.3rem;
+        text-align: center;
+        width: 50%;
+        right: 20rem;
+
+
+}
+figure button{
+    border-radius: 2rem;
+    border: 1px solid var(--color-bg);
+    width: 30%;
+    margin: 0.3rem;
+    cursor: pointer;
+    
+}
+figure button:hover{
+    background: var(--color-secondary);
+    border: 1px solid #ffaa00;
+    color: #f9f9f9;
+}
+
+.article-wrapper{
+    padding: 5rem ;
+    display: grid;
+    grid-template-columns: repeat(3,.5fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+/*=============================sectionTontineAdmin*/
+
+.TontinWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    gap: 2em;
+   
+}
+.imageWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imageBox{
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    margin: .5rem;
+}
+.adminWrapper{
+   
+    align-items: center;
+   
+
+    
+}
+.imageInfo{
+    padding: 1rem;
+    
+    font-weight:bold ;
+    color: var(--color-primary);
+    text-align: justify;
+
+}
+.imageInfo h1 , h2, h3 , h4 {
+    font-size: 20px;
+}
+h5{
+    text-align: center;
+    padding: 0.8rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+}
+.imageInfo img{
+    text-align: center;
+}
+.adminPrime , .subAmin{
+      padding: 1rem; 
+      gap: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;                                                                                                                                                                             
+}
+
+.adminPrime img{
+    padding: .5rem;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.firstBox, .secondBox{
+    border-right: 1px solid var(--color-primary);
+    background-color: var(--color-bg);
+    border-radius: 1.5em;
+    min-height:  100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+
+.adminPrime img:hover{
+    
+    background-color: var(--color-secondary);
+   
+}
+.btnSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.memberBox{
+    padding: 2rem;
+    padding-left: 0px;
+    padding-right:0px ;
+}
+.memberBox .mbrSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+
+}
+.memberBox .mbrSection button{
+    cursor: pointer;
+    background: var(--color-bg2);
+    border: 1px solid var(--color-secondary);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: .5rem;
+    width: 8rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-primary);
+    height: 100%;
+    width: 100%;
+    transition: var(--transition);
+}
+.memberBox .mbrSection button:hover{
+    background-color: var(--color-secondary);
+}
+
+button:active{
+    transform: translateY(2px);
+}
+.modifierBox{
+    padding: 2rem;
+    padding-left: 0px;
+    padding-right:0px ;
+}
+
+.btnSection button{
+    cursor: pointer;
+    background: var(--color-bg);
+    border: 1px solid var(--color-secondary);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    width: 10rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+.btnSection button:hover{
+    background-color: var(--color-secondary);
+}
+
+/**=======================Tresorier section====================*/
+.conte-wrapper{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+}
+.first-cond-box ,.seconde-conte-box{
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 0 0 0.5em 0.1em #c3c3c333;
+}
+.wrapper-conte-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+.TresorierimageBox img{
+   border-radius: 1em;
+}
+.tresorierImageInfo h5 {
+    text-align: center;
+    padding: 0.8rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    width: 15em;
+}
+.wrapper-conte-modifier .TbtnSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.wrapper-conte-modifier .TbtnSection button{
+    padding: 0.5em;
+    font-size: 1.08em;
+
+    border-radius: 0.5em;
+    background-color: var(--color-bg2);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
+}
+.caisseWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.totalBox{
+    background-color: var(--color-primary);
+    padding: 1em;
+    border-radius: 0.5em;
+    color: var(--color-black);
+}
+.conte-member-box{
+    padding: 1em;
+}
+.tresorier-member-wrapper .member-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1em ;
+    gap: 1em;
+   
+}
+.tresorier-member-wrapper .member-box button{
+   border-radius: 0.5em;
+   background-color: var(--color-bg);
+   border: 1px solid var(--color-bg2);
+   padding: 0.5em;
+   font-size: 1.08em;
+   width: 100%;
+   height: 100%;
+   color: var(--color-white);
+}
+.mois h5{
+    font-size: 1.2em;
+    text-align: center;
+}
+.caisseWrapper .caisseBox{
+    padding: 1em;
+    align-items: center;
+}
+.caisseWrapper .caisseBox .caisse{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-bg2);
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    
+}
+.caisseWrapper .caisseBox .caisse label{
+    
+   margin-left:1em ;
+}
+.tresorierImageInfo h1, h2, h3, h4, h5{
+    text-align: left;
+}
+
+
+
+/**=======================secretaire section====================*/
+.secretaireWrapper{
+    display: flex;
+    justify-content: space-around;
+   align-items: flex-start;
+    gap: 1em;
+    padding: 2em;
+}
+.secretairefirstBox , .secretaireBox{
+    padding: 1rem;
+    background-color: var(--color-bg);
+    border-radius: 1em;
+    margin-top: 2em;
+}
+.agendaWrapper{
+    padding: .5rem;
+    
+}
+.agendaBox{
+    gap: 1em;
+}
+.agendaBox .agenda{
+    
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border: 1px solid var(--color-primary);
+    border-radius:0.5em ;
+    margin-bottom: .5em;
+    color: var(--color-white);
+   
+    
+}
+.agendaBox .agenda label{
+    
+    margin-left: 1rem;
+    margin-right:1rem ;
+    color: var(--color-bg);
+    background: var(--color-primary);
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+.agendaBox .agenda span{
+    padding: .3rem;
+    border: 1px solid var(--color-lght);
+    background: var(--color-lght);
+    border-radius: 0.25em;
+}
+
+
+
+
+
+
+
+
+/*
+ .otherAdmin1{
+    width: 10rem;
+        height: 10rem;
+        background: var(--color-primary);
+        border-radius: 2rem;
+
+}
+*/
+
+
+/* ==============tablette screen============= */
+@media screen and (max-width: 1100px){
+  .firstBox, .secondBox{
+        
+       height: 80vh;
+    }
+    .courses{
+        margin-top: 0px;
+    }
+ }
+
+ 
+@media screen and (max-width: 868px){
+    .firstBox , .secondBox {
+        width: var(--container-width-md);
+    }
+    h1,h2,h3,h4{
+        font-size: 0.9rem;
+    }
+    .navBar a{
+
+        font-size: 0.8rem;
+        
+    }
+    .TontinWrapper{
+     
+        flex-direction: column;
+    
+    }
+    .firstBox{
+        border-bottom: 1px solid var(--color-primary);
+        border-right: 0px;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .TresorierWrapper{
+        flex-direction: column;
+        padding: 5rem;
+    }
+
+    /*===================trsoreir phone secction==================*/
+    .conte-wrapper{
+        flex-direction: column;
+    }
+
+    /*====================secretaire Box===============*/
+    .agendaInfo{
+       padding-top: 1rem;
+    }
+    .secretaireWrapper{
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+   
+    
+

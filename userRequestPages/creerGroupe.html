@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIA-BIA</title>
+</head>
+<body>
+    <style>
+        *{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+
+
+    
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+    
+}
+:root{
+    
+    --color-primary:#dbdbdb;
+    --color-secondary:#08529d;
+    --color-success-s :#620de1;
+    --color-success :#048d0b;
+    --color-white:#fff;
+    --color-lght:#bf0f35;
+    --color-black:#000;
+    --color-bg:#15202b;
+    --color-shadow:#4e4d4d33;
+    --color-bg2:#0a131c;
+    --footer-bg:#0b140c;
+
+
+   
+
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+        .creerGroup{
+            padding: 5em;
+            align-items: center;
+        }
+        .myForm{
+            background-color: var(--color-bg2);
+            margin: auto;
+           
+            border-radius: 1em;
+            color: var(--color-secondary);
+            text-align: center;
+            line-height: 3em;
+           width: 35em;
+            padding-bottom: 2rem;
+            padding: 2em;
+           
+            font-size: 0.8rem;
+        }
+        input{
+            padding: 0.5em;
+            border-radius: 0.5em;
+            width: 80%;
+            background: gray;
+            color: var(--color-white);
+        }
+        .labelCycle{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 0.5em;
+        }
+        textarea{
+            width: 80%;
+            border-radius: 0.5em;
+            background: gray;
+            color: var(--color-white);
+        }
+        .btn-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+           
+        }
+        button{
+            padding: 1em;
+            border-radius: 0.5em;
+            background: var(--color-bg2);
+            border: 1px solid var(--color-secondary);
+            color: var(--color-white);
+            width: 50%;
+        }
+
+        
+@media screen and (max-width: 868px){
+    .directory-box{
+        flex-direction: column;
+    }
+    
+}
+    </style>
+    <div class="creerGroup">
+        <form action="" class="myForm">
+            <h2>indiquer le nom de votre reunion</h2>
+            <input type="text" name="group-name" id="grpName" placeholder="Nom du groupe">
+            <div class="cycle">
+                <h2>indiquer le cycle de la cautisation</h2>
+                <div class="labelCycle">
+                    <label for="">Jours</label><input type="radio" name="cycleJours" id="perDay" >
+                <label for="">Semaines</label><input type="radio" name="cycSemaine" id="perWeek" >
+                <label for="">Mois</label><input type="radio" name="cycleMois" id="perMonth" >
+                </div>
+            </div>
+            <h2>indiquer le nombres de membres de la reunion</h2>
+            <input type="number" name="mbrNumber" id="mbrNumber" placeholder="nombre de membre">
+           <div>
+            <h2>Donner une brève description de votre reunion</h2>
+            <textarea name="descriptionGroupe" id="" cols="10" rows="10" placeholder="descriptionGroupe"></textarea>
+           </div>
+           <div class="btn-box">
+            <button class="active">Anuler</button> <button class="active">Ajouter</button>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
